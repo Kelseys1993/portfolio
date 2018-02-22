@@ -13,6 +13,7 @@ ul {
     padding: 0;
     overflow: hidden;
     margin-right: 15vw;
+    margin-top: 25px;
 
 
 }
@@ -40,8 +41,9 @@ li a:hover {
     }
 
 h1 {
-    font-size:10vw;
+    font-size:8vw;
     font-family: 'Marck Script', cursive;
+    text-align: center;
     margin-top: 15vh;
     color: #45b29a;
     }
@@ -51,18 +53,24 @@ h1 {
     font-size: 2.5vw;
     margin-top: 0;
     padding: 0;
+    text-align: center;
     }
 .box,
 .heading{
     padding: 10px;
     margin-bottom: 0px;
-    background-color: #e0ebe8;
+    background-color: #dcf7ef;
     
 }
 .heading {
 	text-align: center;
 }
-
+img{
+    float: left;
+    margin-left: 10%;
+    width: 105px;
+    height: 96px;
+}
 #grid-container{
 	height: 100vh;
     width: 100%;
@@ -80,7 +88,7 @@ h1 {
     padding: 0;
     margin-top:0;
    height: 100vh;
-   background-color: #e0ebe8;
+   background-color: #dcf7ef;
 }
 #box2 {
     grid-column: 1/ 6;
@@ -99,7 +107,7 @@ h1 {
 }
 #box5 {
     grid-column: 1/6;
-     background-color: white;
+     background-color:#dcf7ef;
      height: 100px;
 }
 #grid2{
