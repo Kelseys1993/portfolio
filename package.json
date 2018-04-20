@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kelseys1993/portfolio.git"
+  },
+  "author": "kelsey smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kelseys1993/portfolio/issues"
+  },
+  "homepage": "https://github.com/Kelseys1993/portfolio#readme",
+  "dependencies": {
+    "izimodal": "^1.5.1",
+    "jquery": "^3.3.1"
+  }
+}

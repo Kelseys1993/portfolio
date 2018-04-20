@@ -5,7 +5,8 @@
         <title>Portfolio</title>
         <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
        
-        <link rel="stylesheet" href="css/style.css">
+		   <link rel="stylesheet" href="node_modules/izimodal/css/iziModal.min.css">
+    	<link rel="stylesheet" href="css/style.css">
     </head>
     <body>
   
@@ -19,32 +20,52 @@
 				<div class='heading'>
 					
  					<ul>
-					  <li><a href="#home">About</a></li>
-					  <li><a href="#work">Work</a></li>
-					  <li><a href="#contact">Contact</a></li>
+					  <li><a href="#box2">About</a></li>
+					  <li><a href="#box3">Work</a></li>
+					  <li><a href="#box4">Contact</a></li>
 				
 					</ul>
 
 				</div>
-				<img src="img/newlogo.png">
-					<!-- <p id='sub-heading'>Web Development</p> -->
+				<img src="img/newlogo2.png" class="logo">
+					
 						</div>
 						<div class='box' id='box2'>
+							<h2 id='heading3'>About me</h2>
+							<div id='aboutme'></div>
+							
+						</div>
+						<div class='box' id='box3'>
 							<h2 id='heading2'>My Work</h2>
 							<div id='grid2'>
-								<div class='item' id='item1'></div>
+								<div class='item' id='item1'>
+									<img src="img/kelseymockup.jpg" class="mockup1"  href="#" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">
+									<p class="mockup1Title">Behance API</p>
+								</div>
 								<div class='item' id='item2'></div>
 								<div class='item' id='item3'></div>
 								<div class='item' id='item4'></div>
+
+							
+							       <div id="modal" id="modal1"  data-iziModal-title="Behance API">
+    <p>this is some content</p>
+</div>  
 							</div>
-						</div>
-						<div class='box' id='box3'>
-							<h2 id='heading3'>About me</h2>
-							<div id='aboutme'></div>
 						</div>
 						<div class='box' id='box4'>
 							<h2 id='heading4'>Contact</h2>
-							<div id='contactme'></div>
+							<div id='contactme'>
+								<div class="formContainer">
+									<form>
+										<input type="text" placeholder="First Name" required>
+										<input type="text" placeholder="Last Name" required>
+										<input type="email" placeholder="Email" required>
+										<input type="text" placeholder=
+										"Message" required>
+										<input type="submit" name="" id="submit">
+									</form>
+								</div>
+							</div>
 						</div>
 						<div class='box' id='box5'>
 							
@@ -55,6 +76,10 @@
 
 
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="node_modules/izimodal/js/iziModal.min.js" type="text/javascript"></script>
+    
          <script src="js/script.js"></script>
     </body>
 </html>
