@@ -86,7 +86,7 @@ li a:hover {
 #box2 {
     grid-column: 1/ 6;
     background-color: white;
-    height: 40vh;
+    height: 35vh;
 }
 
 #box3{
@@ -117,8 +117,9 @@ li a:hover {
     margin: 0 auto;
 }
 .item{
-    background-color: white;
+  
     height: 95%;
+    cursor: pointer;
 }
 #item1{
     grid-column:1/2;
@@ -155,6 +156,7 @@ transform: scale(1.1);
 #heading2 {
         color: #506975;
         text-align: center;
+        margin-top: 3%;
     }
 #heading3 {
      color: #506975;
@@ -169,10 +171,24 @@ transform: scale(1.1);
     padding-top:2%;
 }
 #aboutme {
-    background-color: #f2f2f2;
+    
     height:100%;
     width: 100%;
     margin: 0 auto;
+}
+.line {
+    border-top: 1px solid rgba(114,131,136,.15);
+    width: 80%;
+    margin: 0 auto;
+}
+#abouttext {
+    text-align: center;
+    margin-left:5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #545556;
 }
 #contactme {
     
@@ -185,12 +201,29 @@ transform: scale(1.1);
 .mockup1 {
     width: 95%;
     margin: 0 auto;
-    border: 2px solid #f2f2f2 ;
-    border-radius: 15px;
     padding: 5px
+
+}
+.aop {
+    height: 70%;
+}
+.road {
+    margin-top: 10%;
+}
+.Api {
+    margin-top: 12%;
 }
 .mockup1Title {
     text-align: center;
+}
+.tTwo {
+    padding-top: 5.5%;
+}
+.tThree {
+    padding-top: 5%;
+}
+.tFour {
+    padding-top: 20%;
 }
 .formContainer{
     width: 53%;
@@ -217,9 +250,9 @@ transform: scale(1.1);
     width: 170px;
     font-family: inherit;
     font-size: 15px;
-        background-color: #506975;
+    background-color: #506975;
     color: white;
-  
+    cursor: pointer;
 }
 .iziModal-header{
     background: #506975;
