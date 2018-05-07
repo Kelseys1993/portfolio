@@ -210,6 +210,9 @@ transform: scale(1.1);
 .road {
     margin-top: 10%;
 }
+.maps {
+    margin-top: 15%;
+}
 .Api {
     margin-top: 12%;
 }
@@ -220,7 +223,7 @@ transform: scale(1.1);
     padding-top: 5.5%;
 }
 .tThree {
-    padding-top: 5%;
+    padding-top: 9%;
 }
 .tFour {
     padding-top: 20%;
