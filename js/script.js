@@ -1,24 +1,14 @@
+$(document).ready(function(){
+    $('.slide-section').on('click',function (e) {
+        e.preventDefault();
 
-  $(document).ready(function(){
-  $("#modal1").iziModal({
-    headerColor: '#506975'
+        var target = this.hash;
+        $target = $(target);
 
+        $('html, body').stop().animate({
+            'scrollTop':  $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
 });
-   $("#modal2").iziModal({
-    headerColor: '#506975'
-
-});
-
- $("#modal3").iziModal({
-    headerColor: '#506975'
-
-});
-
- $("#modal4").iziModal({
-    headerColor: '#506975'
-
-});
-
-
-  });
-          

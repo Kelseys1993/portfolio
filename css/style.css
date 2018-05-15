@@ -2,7 +2,10 @@
      font-family:  'Actor', sans-serif;
 
 }
-
+html {
+ height: 100vh;
+   
+}
 body {
 	 background-color:white;
      height: 100vh;
@@ -61,7 +64,7 @@ li a:hover {
     
     margin-left: 38%;
     margin-top: 13%;
-
+    width: 28%;
  
 }
 #grid-container{
@@ -119,7 +122,7 @@ li a:hover {
 .item{
   
     height: 95%;
-    cursor: pointer;
+    
 }
 #item1{
     grid-column:1/2;
@@ -127,19 +130,7 @@ li a:hover {
     background-color: white;
      transition: transform .2s;
 }
-#item1:hover{
-transform: scale(1.1);
-}
 
-#item2:hover{
-transform: scale(1.1);
-}
-#item3:hover{
-transform: scale(1.1);
-}
-#item4:hover{
-transform: scale(1.1);
-}
 
 #item2{
     grid-column: 2/3;
@@ -201,7 +192,8 @@ transform: scale(1.1);
 .mockup1 {
     width: 95%;
     margin: 0 auto;
-    padding: 5px
+    padding: 5px;
+    margin-left:3%;
 
 }
 .aop {
@@ -221,12 +213,15 @@ transform: scale(1.1);
 }
 .tTwo {
     padding-top: 5.5%;
+    padding-bottom: 3.75%;
 }
 .tThree {
     padding-top: 9%;
+    padding-bottom: 2.5%;
 }
 .tFour {
     padding-top: 20%;
+    padding-bottom: 3.75%;
 }
 .formContainer{
     width: 53%;
@@ -242,7 +237,7 @@ transform: scale(1.1);
 .formStyle {
     border: none;
     height: 25px;
-    width: 170px;
+    width: 22%;
     font-family: inherit;
     font-size: 15px;
     padding:10px;
@@ -250,20 +245,252 @@ transform: scale(1.1);
 .submitStyle{
     border: none;
     height: 45px;
-    width: 170px;
+    width: 22%;
     font-family: inherit;
     font-size: 15px;
     background-color: #506975;
     color: white;
     cursor: pointer;
 }
-.iziModal-header{
-    background: #506975;
-}
+
 #modal1{
     font-family:  'Actor', sans-serif;
 }
-.iziModal .iziModal-header.iziModal-noSubtitle .iziModal-header-title {
-   font-family:  'Actor', sans-serif; 
-   font-size: 30px;
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+p {
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.button {
+    margin-left: 32%;
+    border: none;
+    height: 40px;
+    width: 160px;
+    font-size: 20px;
+    color: white;
+     background-color: #506975;
+    border-radius: 5px;
+   cursor: pointer;
+   padding: 8px 30px;
+   text-decoration: none;
+}
+.view {
+    text-decoration: none;
+    margin-left: 36%;
+    background-color: #506975;
+    padding: 8px 30px;
+    border-radius: 5px;
+    color: white;
+}
+.creators {
+    text-align: center;
+    padding-bottom: 
+}
+h2 {
+    text-align: center;
+}
+.footer-text {
+    color: white;
+    text-align: center;
+    margin-top:3.5%;
+}
+.modal {
+        height: 90%;
+    overflow-y:scroll;
+    overflow-x:hidden ;
+}
+.modal a.close-modal {
+        top: 10.5px;
+    right: 16.5px;
+}
+
+@media screen and (max-height: 800px) and (min-height: 500px) and (min-width: 1400px) {/*desktop*/
+  #box3 {
+    height: 55vh; 
+    } 
+}
+
+@media only screen  and (max-width: 1000px) and (min-width: 500px) {/* Tablet */
+/* Styles */
+     ::-webkit-scrollbar { 
+    display: none; 
+}
+    body {
+        height: 180vh;
+    }
+    #grid-container {
+        height: 180vh;
+    } 
+    #box1 {
+        height: 48vh;
+    }
+    #box2 {
+        height: 27vh;
+    }
+    #box3 {
+        height: 72vh;
+    }
+    #box4 {
+        height: 24vh;
+    }
+     #box5 {
+        height: 6vh;
+    }
+    #grid2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #item3 {
+        grid-column: 1/2;
+    }
+    #item4 {
+        grid-column: 2/4;
+    }
+    .mockup1 {
+        width: 85%;
+    }
+    .formContainer {
+        width:94%;
+    }
+
+     #abouttext {
+        font-size: 16px;
+     }
+     .modal {
+        height: 70%;
+    }
+
+}
+@media screen and (max-height: 900px) and (max-width: 1000px) and (min-height: 500px) and (min-width: 500px) { /*tablet with smaller height
+*/
+  #box1 {
+        height: 55vh !important;
+    }
+    #box2 {
+        height: 40vh;
+    }
+    #box3 {
+        height: 88vh;
+    }
+    #box4 {
+        height: 30vh;
+    }
+     #box5 {
+        height: 6vh;
+    }
+     .formContainer {
+        width:96%;
+    }
+    .formStyle {
+        margin-bottom: 5px;
+    }
+    .logo {
+        margin-top: 5%;
+    }
+}
+@media screen and (max-height: 900px) and (max-width: 1000px) and (min-height: 700px) and (min-width: 780px) { /*inbetween tablet and desktop
+*/
+    .mockup1 {
+        width: 60%;
+        margin-left:23%;
+    }
+    .aop {
+        height: 62%;
+    }
+    .view {
+        margin-left:40%;
+    }
+
+    .road {
+        margin-top: 4%;
+    }
+}
+/*small phone*/
+@media screen  and (min-width: 320px) and (max-width: 500px) { 
+    html {
+        overflow: scroll;
+
+    }
+         ::-webkit-scrollbar { 
+    display: none; 
+}
+ body {
+        height: 368vh;
+        width: 108vw;
+    }
+    #grid-container {
+        height: 368vh;
+        width: 108vw;
+    } 
+     #box1 {
+        height: 35vh !important;
+    }
+    #box2 {
+        height: 61vh;
+    }
+    #box3 {
+        height: 220vh;
+    }
+    #box4 {
+        height: 42vh;
+    } 
+    #box5 {
+        height: 16vh;
+    }
+    #grid2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #item2 {
+        grid-column: 1/2;
+    }
+    #item3 {
+        grid-column: 1/2;
+    }
+    #item4 {
+        grid-column: 1/2;
+    }
+    .button {
+        margin-left:6%;
+
+    }
+    p {
+        padding: 0;
+    }
+    #abouttext {
+        font-size: 13.5px;
+        margin-top:5%;
+    }
+    .navListItems {
+        display: none;
+    }
+    .formContainer {
+        width: 100%;
+        margin-left: 8%;
+
+    }
+    .submitStyle {
+        margin-left: 17%;
+        margin-top: 7px;
+        width: 52%;
+    }
+    .footer-text {
+        font-size: 14px;
+        margin-top: 10.5%;
+    }
+
+     #contactMessage {
+        font-size: 16px;
+     }
+     .logo {
+     margin-left: 32%;
+    margin-top: 7%;
+    width: 40%;
+     }
+
 }

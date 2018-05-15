@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
         <title>Portfolio</title>
         <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
        
-		   <link rel="stylesheet" href="node_modules/izimodal/css/iziModal.min.css">
     	<link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -19,10 +21,10 @@
 							
 				<div class='heading'>
 					
- 					<ul>
-					  <li><a href="#box2">About</a></li>
-					  <li><a href="#box3">Work</a></li>
-					  <li><a href="#box4">Contact</a></li>
+ 					<ul class='navListItems'>
+					  <li><a href="#heading3" class='slide-section'>About</a></li>
+					  <li><a href="#heading2" class='slide-section'>Work</a></li>
+					  <li><a href="#heading4" class='slide-section'>Contact</a></li>
 				
 					</ul>
 
@@ -49,45 +51,75 @@
 						</div>
 							<h2 id='heading2'>My Work</h2>
 							<div id='grid2'>
-								<div class='item' id='item1'  href="#" data-izimodal-open="#modal1" data-izimodal-transitionin="fadeInDown">
+								<div class='item' id='item1'  >
 									<img src="img/logo1.png" class="mockup1 aop" >
 									<p class="mockup1Title tOne">Digital Ordering</p>
+									<a href="#modal1" rel="modal:open" class='view'>View</a>
 								</div>
 								<div class='item' id='item2'>
-									<img src="img/logo2.png" class="mockup1 road"  href="#" data-izimodal-open="#modal2" data-izimodal-transitionin="fadeInDown">
+									<img src="img/logo2.png" class="mockup1 road">
 									<p class="mockup1Title tTwo">Roadtrippers</p>
+									<a href="#modal2" rel="modal:open" class='view'>View</a>
 								</div>
 								<div class='item' id='item3'>
-									<img src="img/logo3.png" class="mockup1 maps"  href="#" data-izimodal-open="#modal3" data-izimodal-transitionin="fadeInDown">
+									<img src="img/logo3.png" class="mockup1 maps">
 									<p class="mockup1Title tThree">Maps and Places API</p>
+									<a href="#modal3" rel="modal:open" class='view'>View</a>
 								</div>
 								<div class='item' id='item4'>
-									<img src="img/logo4.png" class="mockup1 Api"  href="#" data-izimodal-open="#modal4" data-izimodal-transitionin="fadeInDown">
+									<img src="img/logo4.png" class="mockup1 Api">
 									<p class="mockup1Title tFour">Behance API</p>
+									<a href="#modal4" rel="modal:open" class='view'>View</a>
 								</div>
 
 							
-							       <div id="modal1"   data-iziModal-title="Digital Ordering">
+							       <div id="modal1"   class='modal'>
+							       	<h2>Art Of Pizza Digital Ordering</h2>
 								    <img src="img/mockup1.jpeg" class="mockup1">
+								   
 								    <h3>Scenario</h3>
 								    <p> Art Of Pizza wanted to create new ways for customers to engage with their brand to improve customer engagement and sales of some of their more unique offerings by providing table ordering via digital devices.</p>
 
 								    <p> Customers will be able to use touch screens at their table or booth, tablet type devices mounted at the bar or their own phones anywhere within the venue. They require a system that enable customers to easily order and see the progress of their order and makes suggestions and/or offers.</p>
-								    	<button>See Live Site</button>
+								    	<a class='button' href="https://kelseys1993.github.io/first-summative2.0/pizzas.html">Visit Live Site</a>
 								</div> 
-								  <div id="modal2"   data-iziModal-title="Roadtrippers">
+								  <div id="modal2"   class='modal'>
+								  	<h2>Roadtrippers</h2>
 								  	  <img src="img/mockup2.jpeg" class="mockup1">
-								    <p>this is some content</p>
+								    <h3>Scenario</h3>
+								    <p>Tourism New Zealand works with the tourism industry to positively promote New Zealand internationally. They have a new campaign that is aimed at visitors staying for short periods, arranging their own transport</p>
+
+								    <p>The project was to create a single page web application that allows users to input information, validate the information and provide meaningful feedback when validation has passed or failed. Display transport options based on the information entered. Calculate and display transport costs to the user</p>
+
+								   <a class='button' href="https://kelseys1993.github.io/foundation-summative2.0/">Visit Live Site</a>
 								</div>  
 
-							       <div id="modal3"   data-iziModal-title="Maps and Places API">
+							       <div id="modal3"   class='modal'>
+							       	<h2>Maps and Places API</h2>
 							       	  <img src="img/mockup3.jpeg" class="mockup1">
-								    <p>this is some content</p>
+								    <h3>Scenario</h3>
+								    <p>This was a group project using an external API as a data source. We were each tasked with deciding in how we wanted to display our data. Our group chose to use the google maps and google places APIs to create a site about accommodation, recreation and food in the wellington region. </p>
+
+								    <p>I was responsible for the accommodation page. The user is able to decide what type of accommodation they would like to stay in and when they submit that information the map displays various places around the city. If a user clicks on one of the pins they are provided with more information about that specific location. </p>
+
+								    <p class='creators'>Created with Carey Kwan and Florence Lo</p>
+
+								    <a class='button' href="https://kelseys1993.github.io/mapsandplacesapi/index.html">Visit Live Site</a>
 								</div> 
 
-							       <div id="modal4"   data-iziModal-title="Behance API">
+							       <div id="modal4"   class='modal'>
+							       	<h2>Behance API</h2>
 							       	  <img src="img/mockup4.jpeg" class="mockup1">
-								    <p>this is some content</p>
+								    <h3>Scenario</h3>
+								    <p>Pentagrammer design firm tasked our group to create an app to showcase their designers work. This work was hosted on Behance and so the app consumed the data from the Behance API. The app needed to allow the user to view a:</p>
+
+								    <p> List of designers, Designer’s details, Designer’s projects, Project details and Overall statistics of a designer’s projects including number of views appreciations and comments </p>
+
+								   
+								    <p>I was responsible to the statistics page and also used google charts to create and display the graphs. The user is able to change what designer’s stats they are viewing by clicking on the dropdown of names. </p>
+
+								    <p  class='creators'>Created with Carey Kwan and Florence Lo</p>
+								    <a class='button'>Visit Live Site</a>
 								</div>  
 							</div>
 						</div>
@@ -107,7 +139,10 @@
 							</div>
 						</div>
 						<div class='box' id='box5'>
-							
+							<div class='footer-text'>
+								
+								Designed and developed by Kelsey Smith 2018
+							</div>
 						</div>
 					</div>
 				</div>
@@ -117,7 +152,8 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="node_modules/izimodal/js/iziModal.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+      <!-- // <script src="node_modules/izimodal/js/iziModal.min.js" type="text/javascript"></script> -->
     
          <script src="js/script.js"></script>
     </body>
